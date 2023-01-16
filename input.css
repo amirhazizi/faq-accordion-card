@@ -29,24 +29,28 @@ input {
   cursor: pointer;
   font-size: 1.1rem;
   padding: 0.5rem 0;
+  padding-right: 1rem;
   font-weight: 400;
+}
+
+.que {
+  display: grid;
 }
 .ans {
   display: none;
 }
+
 .arrow-bottom {
   display: none;
 }
 .que:focus-within p {
   display: block;
 }
+
 .que:focus-within .arrow-bottom {
   display: block;
   bottom: 80%;
 }
 .que:focus-within .arrow-top {
   display: none;
-}
-.que {
-  display: grid;
 }
