@@ -25,28 +25,32 @@
     </style>
   </head>
   <body class="bg-purple-700 flex h-screen items-center">
-    <main class="flex max-w-md mx-auto md:h-40">
+    <main class="flex mx-auto max-w-md md:max-w-7xl">
       <div
-        class="card flex flex-col md:flex-row py-16 pt-40 items-center bg-white rounded-3xl"
+        class="flex flex-col md:flex-row py-16 pt-40 items-center bg-white rounded-3xl md:pt-0 md:px-8"
       >
         <!-- img -->
-        <div class="header-container md:w-1/2">
+        <div class="relative overflow-hidden md:w-1/2">
           <img
             src="./images/illustration-woman-online-mobile.svg"
             alt=""
-            class="header drop-shadow-3xl"
+            class="h-52 drop-shadow-3xl md:relative -left-6 md:h-96"
           />
         </div>
         <!-- faq -->
-        <div class="flex flex-col text-left font-bold px-8 md:w-1/2">
+        <div class="flex flex-col text-left font-bold px-6 md:w-1/3">
           <!-- header -->
-          <h1 class="text-4xl text-center mb-10">FAQ</h1>
+          <h1
+            class="text-4xl text-center mb-10 md:mb-0 md:text-left md:pt-16 md:pb-4"
+          >
+            FAQ
+          </h1>
           <div class="px-1">
             <!-- Q1 -->
             <div>
               <div class="que mt-4 relative w-96">
                 <input
-                  class="focus:outline-none focus:mb-3 focus:font-bold relative"
+                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue"
                   type="text"
                   value="How many team members can I invite?"
                   readonly
@@ -69,7 +73,7 @@
             <div>
               <div class="que mt-4 relative w-96">
                 <input
-                  class="focus:outline-none focus:mb-3 focus:font-bold relative"
+                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue"
                   type="text"
                   value="What is the maximum file upload size?"
                   readonly
@@ -91,7 +95,7 @@
             <div>
               <div class="que mt-4 relative w-96">
                 <input
-                  class="focus:outline-none focus:mb-3 focus:font-bold relative"
+                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue"
                   type="text"
                   value="How do I reset my password?"
                   readonly
@@ -114,7 +118,7 @@
             <div>
               <div class="que mt-4 relative w-96">
                 <input
-                  class="focus:outline-none focus:mb-3 focus:font-bold relative"
+                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue"
                   type="text"
                   value="Can I cancel my subscription?"
                   readonly
@@ -136,7 +140,7 @@
             <div>
               <div class="que mt-4 relative w-96">
                 <input
-                  class="focus:outline-none focus:mb-3 focus:font-bold relative"
+                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue"
                   type="text"
                   value="Do you provide additional support?"
                   readonly
