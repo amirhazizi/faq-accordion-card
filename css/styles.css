@@ -521,10 +521,6 @@ video {
   position: relative;
 }
 
-.left-4 {
-  left: 1rem;
-}
-
 .-left-20 {
   left: -5rem;
 }
@@ -615,6 +611,14 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-tr-xl {
+  border-top-right-radius: 0.75rem;
+}
+
+.rounded-tl-xl {
+  border-top-left-radius: 0.75rem;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -625,11 +629,6 @@ video {
   padding-right: 2rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -638,8 +637,8 @@ video {
   padding-bottom: 2rem;
 }
 
-.pb-32 {
-  padding-bottom: 8rem;
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .pb-6 {
@@ -685,6 +684,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.drop-shadow-lg {
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -704,6 +708,7 @@ body {
 }
 
 h1,
+a,
 p {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
@@ -714,12 +719,13 @@ h1 {
 }
 
 input {
-  cursor: pointer;
+  background: none;
   font-size: 1.1rem;
   padding: 0.5rem 0;
   padding-right: 1rem;
   font-weight: 400;
-  transition: color 100ms linear;
+  cursor: pointer;
+  transition: color 200ms linear;
 }
 
 .box {
@@ -755,6 +761,26 @@ main:hover .box {
 
 .que:focus-within .arrow-top {
   display: none;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background: white;
+  padding: 0 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .hover\:text-softred:hover {
@@ -805,10 +831,6 @@ main:hover .box {
     width: 50%;
   }
 
-  .md\:max-w-5xl {
-    max-width: 64rem;
-  }
-
   .md\:max-w-240 {
     max-width: 60rem;
   }
@@ -819,6 +841,16 @@ main:hover .box {
 
   .md\:overflow-hidden {
     overflow: hidden;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .md\:pt-5 {
