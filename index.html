@@ -25,16 +25,26 @@
     </style>
   </head>
   <body class="bg-purple-700 flex h-screen items-center">
-    <main class="flex mx-auto max-w-md md:max-w-7xl">
+    <main class="flex mx-auto max-w-md md:max-w-4xl">
       <div
-        class="flex flex-col md:flex-row py-16 pt-40 items-center bg-white rounded-3xl md:pt-0 md:px-8"
+        class="flex flex-col md:flex-row py-16 pt-20 items-center bg-white rounded-3xl md:pt-0 md:px-0"
       >
         <!-- img -->
-        <div class="relative overflow-hidden md:w-1/2">
+        <div class="relative md:w-1/2 md:overflow-hidden pb-10">
           <img
             src="./images/illustration-woman-online-mobile.svg"
             alt=""
-            class="h-52 drop-shadow-3xl md:relative -left-6 md:h-96"
+            class="md:hidden h-52 drop-shadow-3xl -mt-52"
+          />
+          <img
+            src="./images/illustration-woman-online-desktop.svg"
+            alt=""
+            class="hidden md:block md:opacity-0 drosp-shadow-3xl left-4"
+          />
+          <img
+            src="./images/illustration-woman-online-desktop.svg"
+            alt=""
+            class="hidden md:block md:absolute z-10 h-max w-max drop-shadow-3xl -left-10 top-2"
           />
         </div>
         <!-- faq -->
