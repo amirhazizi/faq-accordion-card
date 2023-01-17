@@ -6,6 +6,11 @@ html {
   font-size: 12px;
 }
 body {
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
 }
 h1,
 p {
@@ -21,8 +26,17 @@ input {
   padding: 0.5rem 0;
   padding-right: 1rem;
   font-weight: 400;
+  transition: color 100ms linear;
+}
+.box {
+  position: absolute;
+  top: 44%;
+  left: -6%;
 }
 
+main:hover .box {
+  left: -10%;
+}
 .que {
   display: grid;
 }

@@ -24,17 +24,19 @@
       }
     </style>
   </head>
-  <body class="bg-purple-700 flex h-screen items-center">
-    <main class="flex mx-auto max-w-md md:max-w-4xl">
+  <body class="flex h-screen items-center">
+    <main
+      class="flex mx-auto max-w-md md:max-w-240 transition-all md:hover:-translate-x-5"
+    >
       <div
-        class="flex flex-col md:flex-row py-16 pt-20 items-center bg-white rounded-3xl md:pt-0 md:px-0"
+        class="flex flex-col md:flex-row pt-1 items-center bg-white rounded-3xl md:pt-5 drop-shadow-2xl pb-8 md:h-152"
       >
-        <!-- img -->
-        <div class="relative md:w-1/2 md:overflow-hidden pb-10">
+        <!-- Image Container -->
+        <div class="relative md:w-1/2 pb-32 px-8 md:overflow-hidden">
           <img
             src="./images/illustration-woman-online-mobile.svg"
             alt=""
-            class="md:hidden h-52 drop-shadow-3xl -mt-52"
+            class="md:hidden h-52 drop-shadow-3xl -mt-32"
           />
           <img
             src="./images/illustration-woman-online-desktop.svg"
@@ -44,23 +46,30 @@
           <img
             src="./images/illustration-woman-online-desktop.svg"
             alt=""
-            class="hidden md:block md:absolute z-10 h-max w-max drop-shadow-3xl -left-10 top-2"
+            class="big-img hidden md:block md:absolute drop-shadow-3xl -left-20 top-10"
           />
         </div>
-        <!-- faq -->
-        <div class="flex flex-col text-left font-bold px-6 md:w-1/3">
+        <!-- Moving box -->
+        <img
+          src="./images/illustration-box-desktop.svg"
+          alt=""
+          class="box hidden md:block h-40 z-10 transition-all"
+        />
+        <!-- faq section -->
+        <div class="flex flex-col text-left font-bold pb-6 px-5 md:w-1/2">
           <!-- header -->
           <h1
-            class="text-4xl text-center mb-10 md:mb-0 md:text-left md:pt-16 md:pb-4"
+            class="head text-4xl text-center mb-5 md:mb-0 md:text-left md:pt-16 md:pb-4"
           >
             FAQ
           </h1>
-          <div class="px-1">
+          <!-- Questions -->
+          <div>
             <!-- Q1 -->
-            <div>
+            <div class="qu">
               <div class="que mt-4 relative w-96">
                 <input
-                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue"
+                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue hover:text-softred"
                   type="text"
                   value="How many team members can I invite?"
                   readonly
@@ -75,15 +84,15 @@
                   You can invite up to 2 additional users on the Free plan.
                   There is no limit on team members for the Premium plan.
                 </p>
+                <hr />
               </div>
-              <hr />
             </div>
 
             <!-- Q2 -->
             <div>
               <div class="que mt-4 relative w-96">
                 <input
-                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue"
+                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue hover:text-softred"
                   type="text"
                   value="What is the maximum file upload size?"
                   readonly
@@ -105,7 +114,7 @@
             <div>
               <div class="que mt-4 relative w-96">
                 <input
-                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue"
+                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue hover:text-softred"
                   type="text"
                   value="How do I reset my password?"
                   readonly
@@ -128,7 +137,7 @@
             <div>
               <div class="que mt-4 relative w-96">
                 <input
-                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue"
+                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue hover:text-softred"
                   type="text"
                   value="Can I cancel my subscription?"
                   readonly
@@ -150,7 +159,7 @@
             <div>
               <div class="que mt-4 relative w-96">
                 <input
-                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue"
+                  class="focus:outline-none focus:mb-3 focus:font-bold relative focus:text-vdarkdesturatedblue hover:text-softred"
                   type="text"
                   value="Do you provide additional support?"
                   readonly
