@@ -17,10 +17,7 @@ module.exports = {
         "3xl": "0 25px 0 rgba(0, 0, 0, .07)",
       },
       height: {
-        152: "37rem",
-      },
-      width: {
-        240: "60rem",
+        152: "36rem",
       },
       maxWidth: {
         240: "60rem",

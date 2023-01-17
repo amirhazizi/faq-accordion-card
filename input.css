@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* import */
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* global font and gradient background */
 html {
   font-size: 12px;
 }
@@ -21,6 +23,7 @@ p {
 h1 {
   font-weight: 700;
 }
+/* custom input */
 input {
   background: none;
   font-size: 1.1rem;
@@ -30,29 +33,19 @@ input {
   cursor: pointer;
   transition: color 200ms linear;
 }
-.box {
-  position: absolute;
-  top: 44%;
-  left: -6%;
-}
-
-main:hover .box {
-  left: -10%;
-}
+/* show paragraph with forced input */
 .que {
   display: grid;
 }
 .ans {
   display: none;
 }
-
 .arrow-bottom {
   display: none;
 }
 .que:focus-within p {
   display: block;
 }
-
 .que:focus-within .arrow-bottom {
   display: block;
   bottom: 80%;
@@ -60,7 +53,18 @@ main:hover .box {
 .que:focus-within .arrow-top {
   display: none;
 }
-
+/* moving box */
+.box {
+  position: absolute;
+  top: 44%;
+  left: -6%;
+}
+main:hover .box {
+  left: -10%;
+}
+.big-img {
+  filter: drop-shadow(-80px 120px 0px hsla(0, 0%, 0%, 0.161));
+}
 /* footer */
 footer {
   position: fixed;
@@ -72,8 +76,10 @@ footer {
   font-size: 11px;
   text-align: center;
   background: white;
+  min-width: 10rem;
   padding: 0 1rem;
 }
 .attribution a {
+  font-weight: 900;
   color: hsl(228, 45%, 44%);
 }

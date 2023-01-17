@@ -525,8 +525,8 @@ video {
   left: -5rem;
 }
 
-.top-10 {
-  top: 2.5rem;
+.top-28 {
+  top: 7rem;
 }
 
 .bottom-6 {
@@ -544,6 +544,10 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.-mt-4 {
+  margin-top: -1rem;
 }
 
 .-mt-32 {
@@ -592,6 +596,10 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .rotate-180 {
@@ -695,6 +703,10 @@ video {
   transition-duration: 150ms;
 }
 
+/* import */
+
+/* global font and gradient background */
+
 html {
   font-size: 12px;
 }
@@ -718,6 +730,8 @@ h1 {
   font-weight: 700;
 }
 
+/* custom input */
+
 input {
   background: none;
   font-size: 1.1rem;
@@ -728,15 +742,7 @@ input {
   transition: color 200ms linear;
 }
 
-.box {
-  position: absolute;
-  top: 44%;
-  left: -6%;
-}
-
-main:hover .box {
-  left: -10%;
-}
+/* show paragraph with forced input */
 
 .que {
   display: grid;
@@ -763,6 +769,22 @@ main:hover .box {
   display: none;
 }
 
+/* moving box */
+
+.box {
+  position: absolute;
+  top: 44%;
+  left: -6%;
+}
+
+main:hover .box {
+  left: -10%;
+}
+
+.big-img {
+  filter: drop-shadow(-80px 120px 0px hsla(0, 0%, 0%, 0.161));
+}
+
 /* footer */
 
 footer {
@@ -776,10 +798,12 @@ footer {
   font-size: 11px;
   text-align: center;
   background: white;
+  min-width: 10rem;
   padding: 0 1rem;
 }
 
 .attribution a {
+  font-weight: 900;
   color: hsl(228, 45%, 44%);
 }
 
@@ -824,7 +848,7 @@ footer {
   }
 
   .md\:h-152 {
-    height: 37rem;
+    height: 36rem;
   }
 
   .md\:w-1\/2 {
@@ -843,9 +867,9 @@ footer {
     overflow: hidden;
   }
 
-  .md\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  .md\:py-36 {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
   }
 
   .md\:px-2 {
